@@ -3,8 +3,8 @@
 Members
 ======
 
-*Matthew Randell
-*Bradley Gavin
-*Curtis White
-*Josh Davis
-*Floris Bouman
+* Matthew Randell
+* Bradley Gavin
+* Curtis White
+* Josh Davis
+* Floris Bouman
