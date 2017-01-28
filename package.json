@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "jasmine-node": "",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "name": "moirai",
+  "version": "1.0.0",
+  "description": "D&D custom database",
+  "main": "login.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Curtis White",
+  "license": "ISC",
+  "directories": {
+    "doc": "doc"
+  }
+}
