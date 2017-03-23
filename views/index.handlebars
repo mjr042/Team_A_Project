@@ -1,30 +1,79 @@
- <h2 class="page-header">Dashboard</h2>
-<p>Your Timeline</p>
+<ul class="timeline">
+    <form class="form-horizontal">
+        <fieldset>
 
-<div id="timeline" class="row">
-        <div class="col-xs-12">
-            <div class="timeline-line"></div>
-            <div col="row">
-                <div class="timeline-content-holder col-xs-6">
-                    <div class="timeline-content">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-arrow"></div>
-                        <div class="time-cont row">
-                            <div class="col-sm-4">
-                                <p><img class="img-responsive" src="http://placehold.it/75x75">
-                                </p>
-                            </div>
-                            <div class="time-cont-col col-sm-8">
-                                <p class="timeline-post">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-content-holder col-xs-6">
-                    <div class="timeline-content-date">
-                            <p>February 12, 2017</p>
-                    </div>
+            <!-- Textarea -->
+            <div class="form-group">
+                <div>
+                    <textarea id="post-area" name="post-area" rows="3" cols="90" placeholder="Have something to share? Post it here!" maxlength="500"></textarea>
                 </div>
             </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <div>
+                    <button id="post-submit-btn" name="post-submit-btn" class="btn btn-primary">Post</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+    <li>
+        <p class="timeline-date">Date Here</p>
+        <div class="timeline-content">
+            <p>Post goes here. Set a character limit? Post goes here. Set a character limit? Post goes here. Set a character limit? Post goes here. Set a character limit?Post goes here. Set a character limit?Post goes here. Set a character limit?Post goes here. Set a character limit? Post goes here. Set a character limit?Post goes here. Set a character limit?Post goes here. Set a character limit? Post goes here. Set a character limit?Post goes here. Set a character limit?Post goes here. Set a character limit? Post goes here. Set a character limit?Post goes here. Set a character limit?Post goes here. Set a character limit? Post goes here. Set a character limit?Post goes here. Set a character limit?Post goes here. Set a character limit?
+            </p>
+            <div class="comment-content">
+                <h6>0 Comments</h6>
+                <div id="posted-comment-area">
+                    <p>Posted Comment goes here</p>
+                    <div id="reply-area">
+                        <p>Posted reply goes here</p>
+                    </div>
+                </div>
+                <textarea id="comment-area" name="comment-area" rows="1" cols="60" placeholder="Post a comment..." maxlength="500"></textarea>
+            </div>
+            <div>
+                <button id="post-submit-btn" name="post-submit-btn" class="btn btn-primary">Post</button>
+            </div>
         </div>
-    </div>
+    </li>
+    <li>
+        <p class="timeline-date">Date Here</p>
+        <div class="timeline-content">
+            <p>Post goes here. Set a character limit?</p>
+            <div class="comment-content">
+                <h6>0 Comments</h6>
+                <div id="posted-comment-area">
+                    <p>Posted Comment goes here</p>
+                    <div id="reply-area">
+                        <p>Posted reply goes here</p>
+                    </div>
+                </div>
+                <textarea id="comment-area" name="comment-area" rows="1" cols="60" placeholder="Post a comment..." maxlength="500"></textarea>
+            </div>
+            <div>
+                <button id="post-submit-btn" name="post-submit-btn" class="btn btn-primary">Post</button>
+            </div>
+        </div>
+    </li>
+    <li>
+        <p class="timeline-date">Date Here</p>
+        <div class="timeline-content">
+            <p>Another fake post to test design</p>
+            <div class="comment-content">
+                <h6>0 Comments</h6>
+                <div id="posted-comment-area">
+                    <p>Posted Comment goes here</p>
+                    <div id="reply-area">
+                        <p>Posted reply goes here</p>
+                    </div>
+                </div>
+                <textarea id="comment-area" name="comment-area" rows="1" cols="60" placeholder="Post a comment..." maxlength="500"></textarea>
+            </div>
+            <div>
+                <button id="post-submit-btn" name="post-submit-btn" class="btn btn-primary">Post</button>
+            </div>
+        </div>
+    </li>
+</ul>
