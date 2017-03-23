@@ -9,6 +9,9 @@ var bcrypt = require('bcryptjs');
 
 // User Schema
 var UserSchema = mongoose.Schema({
+	_id: {
+		type: Number
+	},
 	username: {
 		type: String,
 		index:true
@@ -18,17 +21,6 @@ var UserSchema = mongoose.Schema({
 	},
 	email: {
 		type: String
-		trim: true,
-        lowercase: true,
-        unique: true,
-        required: 'Email address is required',
-        validate: [validateEmail, 'E-mail must be a valid MUN e-mail.'],
-        match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
-		validate: {
-    validator: function(value) {
-      return value === '@mun.ca';
-    },
-    message: 'Invalid email.',
 	},
 	name: {
 		type: String
