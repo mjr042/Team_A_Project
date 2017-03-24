@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Memorial University of Newfoundland -- Student Social Network</title>
+	<title>MUNSSN -- MUN Student Social Network</title>
 	<link rel="stylesheet" href="/css/bootstrap.css" />
 	<link rel="stylesheet" href="/css/style.css" />
-	<script src="https://code.jquery.com/jquery.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="/css/timeline-style.css" rel="stylesheet" type="text/css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/css/timeline.css" />
 </head>
 <body>
 	<div class="container">
@@ -15,7 +12,7 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             {{#if user}}
-              <li role="presentation"><a href="/">Dashboard</a></li>
+              <li role="presentation"><a href="/">Profile</a></li>
               <li role="presentation"><a href="/users/logout">Logout</a></li>
             {{else}}
               <li role="presentation"><a href="/users/login">Login</a></li>
@@ -23,7 +20,7 @@
             {{/if}}
           </ul>
         </nav>
-        <h3 class="text-muted">Login</h3>
+        <h3 class="text-muted">MUNSSN</h3>
       </div>
 
 
