@@ -38,7 +38,7 @@ var db = mongoose.connection;
 // Import scripts for users and routing upon form input. Head to the routes and public folders to edit the system there.
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var groups = require('./routes/groups');
 /*
 * END DEPENDENCIES
 */
@@ -105,6 +105,7 @@ app.use(function (req, res, next) {
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/groups', groups);
 
 // Set Port and start server
 app.set('port', (process.env.PORT || 3000));
