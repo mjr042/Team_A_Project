@@ -1,5 +1,13 @@
 # Team_A_Project
 
+Start mongod
+For linux, run command 'node login.js' from the root directorty
+Project is run on localhost:3000
+Group creation is at localhost:3000/groups/new
+Group pages are at localhost:3000/groups/ + the name of the group
+
+
+
 This skeleton contains all files needed to create a Node.js web application. 
 Modules act as libraries to provide a vast array of functions. Many of them are unecessary but have been included
 for testing purposes.
@@ -29,3 +37,4 @@ STARTING MongoDB AND NODE.JS
 2. Open Command Terminal.
 3. cd to mongodb installation folder.
 4. Type `mongod.exe` or `start mongodb` to launch MongoDB server. NOTE: Command used may depend on OS environment. 
+
