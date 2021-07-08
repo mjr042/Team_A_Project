@@ -26,7 +26,7 @@ router.post('/register', function(req, res){
 	// Validation
 	req.checkBody('name', 'Name is required.').notEmpty();
 	req.checkBody('email', 'Email is required.').notEmpty();
-	req.checkBody('email', 'Email is not valid.').isEmail();
+	req.checkBody('email', 'Email must be a MUN e-mail.').isEmail();
 	req.checkBody('username', 'Username is required.').notEmpty();
 	req.checkBody('password', 'Password is required.').notEmpty();
 	req.checkBody('password2', 'Passwords do not match.').equals(req.body.password);
@@ -40,13 +40,15 @@ router.post('/register', function(req, res){
 	} else {
 		var newUser = new User({
 			name: name,
-			email:email,
+			email: email,
 			username: username,
 			password: password
 		});
 
+		var acceptableEmailType = "@mun.ca"
 		User.createUser(newUser, function(err, user){
 			if(err) throw err;
+			if(!email.endsWith(acceptableEmailType)) throw err;
 			console.log(user);
 		});
 
